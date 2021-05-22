@@ -8,6 +8,8 @@
     "start": "next start"
   },
   "dependencies": {
+    "@apollo/client": "^3.3.19",
+    "@apollo/react-hooks": "^4.0.0",
     "@graphql-tools/schema": "^7.1.5",
     "@types/micro-cors": "^0.1.1",
     "apollo-server-micro": "^2.24.1",
