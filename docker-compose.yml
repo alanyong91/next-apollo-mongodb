@@ -1,0 +1,18 @@
+version: '2'
+
+services:
+  mongodb:
+    image: mongo:4.4.2
+    restart: always
+    container_name: nextjs-apollo-mongodb
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: ${MONGODB_ROOT_USERNAME}
+      MONGO_INITDB_ROOT_PASSWORD: ${MONGODB_ROOT_PASSWORD}
+    ports:
+      - ${MONGODB_PORT}:27017
+    volumes:
+      - nextjs_appollo_data:/data/db
+      - ./mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js
+
+volumes:
+  nextjs_appollo_data:
