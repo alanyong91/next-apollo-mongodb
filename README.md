@@ -1,4 +1,9 @@
-# Nextjs - Apollo (Graphql) - MongoDB
+# Nextjs (Typescript) - Apollo (Graphql) - MongoDB
+
+- nodejs: v14.15.3
+- mongodb: v4.4.2
+- nextjs: v10.2.2
+- reactjs: v17.0.2
 
 ## Setup and Installation
 
